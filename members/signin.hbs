@@ -15,18 +15,18 @@
 
         {{!-- Not logged in: Signin form --}}
         <form class="signin-form" data-members-form="signin">
-            <h1 class="signin-title">Welcome back!</h1>
-            <p>Sign into your account again for full access</p>
+            <h1 class="signin-title">Bem vindo(a) de volta!</h1>
+            <p>Faço o login abaixo para ter acesso ao conteúdo completo do blog</p>
             <div class="signin-box">
-                <input data-members-email type="email" placeholder="Your email address" required="true" autocomplete="false" />
+                <input data-members-email type="email" placeholder="Seu endereço de email aqui" required="true" autocomplete="false" />
                 <button class="button primary" type="submit">
-                    <span class="button-content">Send login link</span>
+                    <span class="button-content">Enviar link para login</span>
                     <span class="button-loader">{{> "icons/loader"}}</span>
                 </button>
             </div>
-            <p><small>Don't have an account yet? <a href="{{@site.url}}/signup/">Sign up</a></small></p>
-            <div class="message-success"><strong>Great!</strong> Check your inbox and click the link to complete signin</div>
-            <div class="message-error">Please enter a valid email address!</div>
+            <p><small>Ainda não é assinante? <a href="{{@site.url}}/signup/">Clique aqui para assinar</a></small></p>
+            <div class="message-success"><strong>Ótimo!</strong> Cheque sua caixa de email e clique no link para confirmar sua assinatura</div>
+            <div class="message-error">Por favor, insira um endereço de email válido</div>
         </form>
 
     {{/if}}
